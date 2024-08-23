@@ -1,31 +1,55 @@
-body{
+body {
     background-image: url("https://www.shutterstock.com/image-vector/perfect-starry-night-sky-background-260nw-1053945752.jpg");
     background-size: cover;
     ;
 }
-.barra{
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: gold;
+    display: flex;
+    justify-content: center;
+    font-size: 3cm;
+}
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: gold;
+    display: flex;
+    margin-left: 2cm;
+}
+hr {
+    border: 3px solid gold;
+    border-radius: 300px/10px;
+    height: 0px;
+    text-align: center;
+    margin-left: 2cm;
+    margin-right: 2cm;
+}
+.barra {
     display: flex;
     width: 100%;
     justify-content: space-between;
     height: 1.8cm;
     background-color: grey;
 }
-.logo{
-display:flex;
-margin-left: 3cm;
-height: 1.5cm;
-width: 2.8cm;
+.logo {
+    display: flex;
+    margin-left: 3cm;
+    height: 1.5cm;
+    width: 2.8cm;
 }
-
-footer{
-    display:flex;
+footer {
+    display: flex;
     justify-content: center;
     color: white;
     font-weight: bold;
 }
-button{
+button {
     height: 1cm;
     margin-right: 2cm;
     margin-top: 0.4cm;
 }
-
+#CardPersonaje{
+margin-left: 2cm;
+display: flex;
+margin-top: 0.8cm;
+}

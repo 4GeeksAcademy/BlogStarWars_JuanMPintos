@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../store/appContext";
+
 
 export const Navbar = () => {
 	return (
-		<div classNameName="barra_principal">
+		<div classNameName="barra_principal" fixed-top>
 			<nav className="navbar">
 				<div className="barra">
 					<a className="navbar-brand" href="#">

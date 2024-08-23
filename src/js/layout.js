@@ -3,7 +3,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import injectContext from "./store/appContext";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
-import { CardPersonaje } from "./component/cardPersonaje";
+import { Pantalla_inicio } from "./views/pantalla_inicio";
+
+
 
 //create your first component
 const Layout = () => {
@@ -16,11 +18,8 @@ const Layout = () => {
 			<BrowserRouter basename={basename}>
 					<Navbar />
 					<Routes>
-						<Route path="/" />
-						<Route path="/planeta_detail" element={<CardPersonaje />} />
-						<Route path="/vehiculo_detail" element={<CardPersonaje />} />
-						<Route path="/personaje_detail" element={<CardPersonaje />} />
-						<Route path="*" element={<h1>Not found!</h1>} />
+						<Route path="/" element={<Pantalla_inicio />} />
+						<Route path="*" element={<h1>Algo salio mal</h1>} />
 					</Routes>
 					<Footer />
 			</BrowserRouter>
