@@ -1,5 +1,5 @@
 body {
-    background-image: url("https://www.shutterstock.com/image-vector/perfect-starry-night-sky-background-260nw-1053945752.jpg");
+    background-image: url("https://imgs.search.brave.com/LYnd_WsjmcHvcl0uxcBfhakMYEfDRBwHUKZiG5QfksY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbHBhcGVyc2Fm/YXJpLmNvbS8zNy83/Ny9tVWN4NDIuanBn");
     background-size: cover;
     ;
 }
@@ -52,4 +52,22 @@ button {
 margin-left: 2cm;
 display: flex;
 margin-top: 0.8cm;
+}
+.card{
+    display: flex;
+    margin-left: 2cm;
+    margin-top: 0.8cm;
+    margin-bottom: 1.2cm;
+}
+.inicio_personajes{
+    display: inline-flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.inicio_vehiculos{
+    display:inline-flex
+}
+.inicio_planetas{
+    display:inline-flex
 }

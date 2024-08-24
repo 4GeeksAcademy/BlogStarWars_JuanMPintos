@@ -5,7 +5,7 @@ import { Context } from "../store/appContext";
 
 export const Navbar = () => {
 	return (
-		<div classNameName="barra_principal" fixed-top>
+		<div className="barra_principal">
 			<nav className="navbar">
 				<div className="barra">
 					<a className="navbar-brand" href="#">

@@ -1,45 +1,71 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			demo: [
-				{
-					title: "FIRST",
-					background: "white",
-					initial: "white"
-				},
-				{
-					title: "SECOND",
-					background: "white",
-					initial: "white"
-				}
-			]
+			people:[
+
+			],
+			starship: [{
+
+			}],
+			planets:[{
+
+			}]
 		},
 		actions: {
-			// Use getActions to call a function within a fuction
-			exampleFunction: () => {
-				getActions().changeColor(0, "green");
-			},
-			loadSomeData: () => {
-				/**
-					fetch().then().then(data => setStore({ "foo": data.bar }))
-				*/
-			},
-			changeColor: (index, color) => {
-				//get the store
-				const store = getStore();
 
-				//we have to loop the entire demo array to look for the respective index
-				//and change its color
-				const demo = store.demo.map((elm, i) => {
-					if (i === index) elm.background = color;
-					return elm;
-				});
+			//PARA LA PANTALLA DE INICIO//
+			cargarTodosLosPersonajes: async () => {
+				const response = await fetch(`https://www.swapi.tech/api/people/`);
+				const data = await response.json();
+				setStore({
+					people: data.results
+				})
+			},
 
-				//reset the global store
-				setStore({ demo: demo });
-			}
-		}
-	};
-};
+			cargarTodosLosVehiculos: async () => {
+				const response = await fetch ("https://www.swapi.tech/api/starships/");
+				const data = await response.json();
+				setStore({
+					starships: data.results
+				})
+			},
+
+			cargarTodosLosPlanetas: async () => {
+				const response = await fetch("https://www.swapi.tech/api/planets/");
+				const data = await response.json();
+				setStore({
+					planets: data.results
+				})
+			},
+			
+			//PARA LA VISTAS DETALLADAS//
+			cargarPersonajes: async (id) => {
+				const response = await fetch(`https://www.swapi.tech/api/people/${id}`);
+				const data = await response.json();
+				setStore({
+					people: data.people
+				})
+			},
+
+			cargarVehiculos: async (id) => {
+				const response = await fetch(`https://www.swapi.tech/api/starship/${id}`);
+				const data = await response.json();
+				setStore({
+						starship: data.starship
+				})
+			},
+
+			cargarPlanetas: async (id) => {
+				const response = await fetch(`https://www.swapi.tech/api/planets/${id}`);
+				const data = await response.json();
+				setStore({
+						planets: data.planets
+				})
+			},
+			
+
+		}//FIN DEL ACTION
+	};//FIN DEL RETURN
+};//FIN DEL GETSTATE
 
 export default getState;
