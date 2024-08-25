@@ -61,9 +61,6 @@ margin-top: 0.8cm;
 }
 .inicio_personajes{
     display: inline-flex;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
 }
 .inicio_vehiculos{
     display:inline-flex
@@ -71,3 +68,5 @@ margin-top: 0.8cm;
 .inicio_planetas{
     display:inline-flex
 }
+
+

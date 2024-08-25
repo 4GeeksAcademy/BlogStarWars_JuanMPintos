@@ -3,7 +3,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import injectContext from "./store/appContext";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
-import { Pantalla_inicio } from "./views/pantalla_inicio";
+import { PantallaInicio } from "./views/pantallaInicio";
+import { VistaPersonaje } from "./views/vistaPersonaje";
+import { VistaVehiculo } from "./views/vistaVehiculo";
+import { VistaPlaneta} from "./views/vistaPlaneta";
+
 
 
 
@@ -18,7 +22,10 @@ const Layout = () => {
 			<BrowserRouter basename={basename}>
 					<Navbar />
 					<Routes>
-						<Route path="/" element={<Pantalla_inicio />} />
+						<Route path="/" element={<PantallaInicio />} />
+						<Route path="/vistaVehiculo" elememt={<VistaVehiculo />} />
+						<Route path="/vistaPlaneta" element={<VistaPlaneta />} />
+						<Route path="/vistaPersonaje" element={<VistaPersonaje />} />
 						<Route path="*" element={<h1>Algo salio mal</h1>} />
 					</Routes>
 					<Footer />
