@@ -18,22 +18,22 @@ export const PantallaInicio = () => {
         <div>
             <h1>Star Wars Blog</h1>
             <hr />
-            <h2>Personajes</h2>
-            <div className="inicio_personajes" >
+            <h2>Characters</h2>
+            <div className="inicio_personajes row d-flex flex-nowrap overflow-auto" >
                 {
                     store.people?.map((personaje) => (<CardPersonaje name={personaje.name} />))
                 }
             </div>
             <hr />
-            <h2>Vehiculos</h2>
-            <div className="inicio_vehiculos">
+            <h2>starships</h2>
+            <div className="inicio_vehiculos row d-flex flex-nowrap overflow-auto">
                 {
                     store.starships?.map((vehiculo) => (<CardVehiculo name={vehiculo.name} />))
                 }
             </div>
             <hr />
-            <h2>Planetas</h2>
-            <div className="inicio_planetas">
+            <h2>Planets</h2>
+            <div className="inicio_planetas row d-flex flex-nowrap overflow-auto">
                 {
                     store.planets?.map((planeta) => (<CardPlaneta name={planeta.name} />))
                 }

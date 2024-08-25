@@ -1,20 +1,24 @@
 body {
     background-image: url("https://imgs.search.brave.com/LYnd_WsjmcHvcl0uxcBfhakMYEfDRBwHUKZiG5QfksY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbHBhcGVyc2Fm/YXJpLmNvbS8zNy83/Ny9tVWN4NDIuanBn");
     background-size: cover;
-    ;
+
 }
+
 h1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "StarJedi";
     color: gold;
     display: flex;
     justify-content: center;
     font-size: 3cm;
+    text-shadow: 10px 10px 10px rgba(180, 171, 7, 0.792);
 }
 h2 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "StarJedi";
     color: gold;
     display: flex;
     margin-left: 2cm;
+    text-shadow: 10px 10px 10px rgba(180, 171, 7, 0.792);
+
 }
 hr {
     border: 3px solid gold;
@@ -42,6 +46,7 @@ footer {
     justify-content: center;
     color: white;
     font-weight: bold;
+    text-shadow: 6px 6px 6px rgb(243, 12, 12);
 }
 button {
     height: 1cm;
@@ -58,15 +63,61 @@ margin-top: 0.8cm;
     margin-left: 2cm;
     margin-top: 0.8cm;
     margin-bottom: 1.2cm;
+    background-color: rgb(197, 194, 194);
+    border: gold;
+    border: 5px;
 }
 .inicio_personajes{
-    display: inline-flex;
+    overflow-x: visible;
 }
-.inicio_vehiculos{
-    display:inline-flex
-}
-.inicio_planetas{
-    display:inline-flex
-}
+ .foto_detalle{
+    width: min-content;
+    height: min-content;
+ }  
+ .personaje{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 70%;
+    justify-content: center;
+    margin-left: 6cm;
+ }
+ .planeta{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 70%;
+    justify-content: center;
+    margin-left: 6cm;
+ }
+ .vehiculo{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 70%;
+    justify-content: center;
+    margin-left: 6cm;
+ }
+ @font-face {
+    font-family: "StarJedi";
+    src: url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.eot");
+    src: url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.eot?#iefix") format("embedded-opentype"),
+         url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.woff2") format("woff2"),
+         url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.woff") format("woff"),
+         url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.ttf") format("truetype"),
+         url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.svg#Star Jedi V2") format("svg");
+  }
+  
+  .card-img-top{
+    padding-top: 0.4cm;
+  }
 
-
+  .favoritos{
+    font-family: "StarJedi";
+  }
+  .card{
+    border-color: gold;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: 20px 20px 20px rgba(151, 203, 201, 0.5);
+    border-radius: 20px;
+}
+  
+  

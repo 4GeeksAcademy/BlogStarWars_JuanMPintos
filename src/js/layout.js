@@ -5,7 +5,7 @@ import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { PantallaInicio } from "./views/pantallaInicio";
 import { VistaPersonaje } from "./views/vistaPersonaje";
-import { VistaVehiculo } from "./views/vistaVehiculo";
+import {VistaVehiculo } from "./views/vistaVehiculo";
 import { VistaPlaneta} from "./views/vistaPlaneta";
 
 
@@ -23,7 +23,7 @@ const Layout = () => {
 					<Navbar />
 					<Routes>
 						<Route path="/" element={<PantallaInicio />} />
-						<Route path="/vistaVehiculo" elememt={<VistaVehiculo />} />
+						<Route path="/vistaVehiculo" element={<VistaVehiculo />} />
 						<Route path="/vistaPlaneta" element={<VistaPlaneta />} />
 						<Route path="/vistaPersonaje" element={<VistaPersonaje />} />
 						<Route path="*" element={<h1>Algo salio mal</h1>} />

@@ -13,7 +13,7 @@ export const Navbar = () => {
 							<img className="logo" src="https://pngimg.com/d/star_wars_logo_PNG6.png" alt="logo" width="30" height="24" />
 						</Link>
 					</a>
-					<button type="button" className="btn btn-warning">Favorites</button>
+					<button type="button" className="favoritos btn btn-warning">Favorites</button>
 				</div>
 			</nav>
 		</div>
