@@ -18,7 +18,10 @@ h2 {
     display: flex;
     margin-left: 2cm;
     text-shadow: 10px 10px 10px rgba(180, 171, 7, 0.792);
-
+}
+h5{
+    font-family: "StarJedi";
+    color:rgba(255, 217, 0, 0.804);
 }
 hr {
     border: 3px solid gold;
@@ -99,7 +102,6 @@ margin-top: 0.8cm;
     font-family: "StarJedi";
     src: url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.eot");
     src: url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.eot?#iefix") format("embedded-opentype"),
-         url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.woff2") format("woff2"),
          url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.woff") format("woff"),
          url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.ttf") format("truetype"),
          url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.svg#Star Jedi V2") format("svg");

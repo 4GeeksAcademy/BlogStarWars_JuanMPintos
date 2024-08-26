@@ -21,21 +21,21 @@ export const PantallaInicio = () => {
             <h2>Characters</h2>
             <div className="inicio_personajes row d-flex flex-nowrap overflow-auto" >
                 {
-                    store.people?.map((personaje) => (<CardPersonaje name={personaje.name} />))
+                    store.people?.map((personaje) => (<CardPersonaje name={personaje.name} uid={personaje.uid} />))
                 }
             </div>
             <hr />
             <h2>starships</h2>
             <div className="inicio_vehiculos row d-flex flex-nowrap overflow-auto">
                 {
-                    store.starships?.map((vehiculo) => (<CardVehiculo name={vehiculo.name} />))
+                    store.starships?.map((vehiculo) => (<CardVehiculo name={vehiculo.name} uid={vehiculo.uid}/>))
                 }
             </div>
             <hr />
             <h2>Planets</h2>
             <div className="inicio_planetas row d-flex flex-nowrap overflow-auto">
                 {
-                    store.planets?.map((planeta) => (<CardPlaneta name={planeta.name} />))
+                    store.planets?.map((planeta) => (<CardPlaneta name={planeta.name} uid={planeta.uid} />))
                 }
             </div>
         </div>

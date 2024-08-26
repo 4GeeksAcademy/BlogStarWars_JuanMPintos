@@ -1,15 +1,27 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			people:[
+			people: [
 
 			],
 			starship: [{
 
 			}],
-			planets:[{
+			planets: [{
 
-			}]
+			}],
+			favotires: {
+				people: [
+
+				],
+				starship: [{
+	
+				}],
+				planets: [{
+	
+				}],
+			}
+
 		},
 		actions: {
 
@@ -23,7 +35,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 
 			cargarTodosLosVehiculos: async () => {
-				const response = await fetch ("https://www.swapi.tech/api/starships/");
+				const response = await fetch("https://www.swapi.tech/api/starships/");
 				const data = await response.json();
 				setStore({
 					starships: data.results
@@ -37,35 +49,28 @@ const getState = ({ getStore, getActions, setStore }) => {
 					planets: data.results
 				})
 			},
-			
+
 			//PARA LA VISTAS DETALLADAS//
-			cargarPersonajes: async (id) => {
-				const response = await fetch(`https://www.swapi.tech/api/people/${id}`);
+			cargarPersonaje: async (uid) => {
+				const response = await fetch(`https://www.swapi.tech/api/people/${uid}`);
 				const data = await response.json();
-				setStore({
-					people: data.people
-				})
+				return data.result
+
 			},
 
-			cargarVehiculos: async (id) => {
-				const response = await fetch(`https://www.swapi.tech/api/starship/${id}`);
+			cargarVehiculo: async (uid) => {
+				const response = await fetch(`https://www.swapi.tech/api/starships/${uid}`);
 				const data = await response.json();
-				setStore({
-						starship: data.starship
-				})
+				return data.result
 			},
 
-			cargarPlanetas: async (id) => {
-				const response = await fetch(`https://www.swapi.tech/api/planets/${id}`);
+			cargarPlaneta: async (uid) => {
+				const response = await fetch(`https://www.swapi.tech/api/planets/${uid}`);
 				const data = await response.json();
-				setStore({
-						planets: data.planets
-				})
+				return data.result
 			},
-			
-
-		}//FIN DEL ACTION
-	};//FIN DEL RETURN
-};//FIN DEL GETSTATE
+		}	
+	}
+}
 
 export default getState;
