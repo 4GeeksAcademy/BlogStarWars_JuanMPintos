@@ -10,7 +10,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 			planets: [{
 
 			}],
-			favotires: {
+			favorites: {
+				
 				people: [
 
 				],
@@ -20,7 +21,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 				planets: [{
 	
 				}],
-			}
+			},
+			favoritos:[]
 
 		},
 		actions: {
@@ -69,6 +71,23 @@ const getState = ({ getStore, getActions, setStore }) => {
 				const data = await response.json();
 				return data.result
 			},
+		
+			agregarFavoritos: (item) => {
+			const store = getStore()
+			if (!store.favoritos.includes(item)) {
+				setStore({favoritos:[...store.favoritos, item]})
+			}
+			},
+
+			eliminarFavorito: (item) => {
+				const store = getStore()
+				const filtrado = store.favoritos.filter((favorito) => {
+					return (favorito != item)
+				})
+				setStore({favoritos:filtrado})
+			}
+		
+		
 		}	
 	}
 }
