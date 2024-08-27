@@ -24,11 +24,15 @@ export const VistaPlaneta = () => {
             <div className="card-body">
                 <h5 className="card-title">{info.properties.name}</h5>
                 <h6>{info.description}</h6>
-                <h6>Gender: {info.properties.gender}</h6>
-                <h6>Height: {info.properties.height} cm.</h6>
-                <h6>Hair: {info.properties.hair_color}</h6>
-                <h6>Birthyear: {info.properties.birth_year}</h6>
-                <h6>Eyes: {info.properties.eye_color}</h6>
+                <h6>Diameter: {info.properties.diameter}</h6>
+                <h6>Rotation Period: {info.properties.rotation_period}</h6>
+                <h6>Orbital Period: {info.properties.orbital_period}</h6>
+                <h6>Gravity: {info.properties.gravity}</h6>
+                <h6>Population: {info.properties.population}</h6>
+                <h6>Climate: {info.properties.climate}</h6>
+                <h6>Population: {info.properties.population}</h6>
+                <h6>Terrain: {info.properties.terrain}</h6>
+                <h6>Surface Water: {info.properties.surface_water}</h6>
             </div>
         </div>
     )

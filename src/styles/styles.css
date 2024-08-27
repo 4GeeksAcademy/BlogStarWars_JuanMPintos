@@ -74,8 +74,13 @@ margin-top: 0.8cm;
     overflow-x: visible;
 }
  .foto_detalle{
-    width: min-content;
-    height: min-content;
+    width: fit-content;
+    height: fit-content;
+    padding-right: 2.5cm;
+    padding-bottom: 1cm;
+    padding-top: 1cm;
+    
+    
  }  
  .personaje{
     display: flex;

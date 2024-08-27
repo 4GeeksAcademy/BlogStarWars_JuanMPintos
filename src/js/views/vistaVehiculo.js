@@ -21,11 +21,12 @@ export const VistaVehiculo = () => {
                 <div className="card-body">
                     <h5 className="card-title">{info.properties.name}</h5>
                     <h6>{info.description}</h6>
-                    <h6>Gender: {info.properties.gender}</h6>
-                    <h6>Height: {info.properties.height} cm.</h6>
-                    <h6>Hair: {info.properties.hair_color}</h6>
-                    <h6>Birthyear: {info.properties.birth_year}</h6>
-                    <h6>Eyes: {info.properties.eye_color}</h6>
+                    <h6>Model: {info.properties.model}</h6>
+                    <h6>Starship: {info.properties.starship_class} cm.</h6>
+                    <h6>Cost in Credits: {info.properties.cost_in_credits}</h6>
+                    <h6>Passengers: {info.properties.passengers}</h6>
+                    <h6>Hyperdrive Rating: {info.properties.hyperdrive_rating}</h6>
+                    
                 </div>
             </div>
         )
