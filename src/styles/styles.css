@@ -1,7 +1,6 @@
 body {
     background-image: url("https://imgs.search.brave.com/LYnd_WsjmcHvcl0uxcBfhakMYEfDRBwHUKZiG5QfksY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbHBhcGVyc2Fm/YXJpLmNvbS8zNy83/Ny9tVWN4NDIuanBn");
     background-size: cover;
-
 }
 
 h1 {
@@ -12,6 +11,7 @@ h1 {
     font-size: 3cm;
     text-shadow: 10px 10px 10px rgba(180, 171, 7, 0.792);
 }
+
 h2 {
     font-family: "StarJedi";
     color: gold;
@@ -19,10 +19,12 @@ h2 {
     margin-left: 2cm;
     text-shadow: 10px 10px 10px rgba(180, 171, 7, 0.792);
 }
+
 h5{
     font-family: "StarJedi";
     color:rgba(255, 217, 0, 0.804);
 }
+
 hr {
     border: 3px solid gold;
     border-radius: 300px/10px;
@@ -31,19 +33,7 @@ hr {
     margin-left: 2cm;
     margin-right: 2cm;
 }
-.barra {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    height: 1.8cm;
-    background-color: grey;
-}
-.logo {
-    display: flex;
-    margin-left: 3cm;
-    height: 1.5cm;
-    width: 2.8cm;
-}
+
 footer {
     display: flex;
     justify-content: center;
@@ -51,16 +41,27 @@ footer {
     font-weight: bold;
     text-shadow: 6px 6px 6px rgb(243, 12, 12);
 }
+
 button {
-    height: 1cm;
-    margin-right: 2cm;
     margin-top: 0.4cm;
+    margin-right: 2cm;
 }
+
+.btn-warning{
+    font-family: "StarJedi";
+}
+
 #CardPersonaje{
 margin-left: 2cm;
 display: flex;
 margin-top: 0.8cm;
 }
+.logo{
+    margin-left: 3cm;
+    height: 1.5cm;
+    width: 2.8cm;
+}
+
 .card{
     display: flex;
     margin-left: 2cm;
@@ -79,7 +80,6 @@ margin-top: 0.8cm;
     padding-right: 2.5cm;
     padding-bottom: 1cm;
     padding-top: 1cm;
-    
     
  }  
  .personaje{
@@ -116,7 +116,7 @@ margin-top: 0.8cm;
     padding-top: 0.4cm;
   }
 
-  .favoritos{
+  .boton_de_favoritos{
     font-family: "StarJedi";
   }
   .card{
@@ -125,6 +125,5 @@ margin-top: 0.8cm;
     border-style: solid;
     box-shadow: 20px 20px 20px rgba(151, 203, 201, 0.5);
     border-radius: 20px;
-}
-  
+  }
   
