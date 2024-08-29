@@ -27,7 +27,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 		},
 		actions: {
 
-			//PARA LA PANTALLA DE INICIO//
 			cargarTodosLosPersonajes: async () => {
 				const response = await fetch(`https://www.swapi.tech/api/people/`);
 				const data = await response.json();
@@ -52,7 +51,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 				})
 			},
 
-			//PARA LA VISTAS DETALLADAS//
 			cargarPersonaje: async (uid) => {
 				const response = await fetch(`https://www.swapi.tech/api/people/${uid}`);
 				const data = await response.json();
